@@ -1,0 +1,80 @@
+/* I want to set up an animation of the background */
+
+@keyframes example {
+    from {background-color: #791e94;}
+    to {background-color: #7eb09b;}
+  }
+
+body {
+    background-color: #791e94;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+    animation-direction: alternate; 
+  }
+  
+  @keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+
+  .game-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #c16200;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transform: rotate(0deg);
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .scoreboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    background-color: #d7bce8;
+    color: #242423;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  .result {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  .result-text {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .play-again {
+    margin-top: 10px;
+  }
